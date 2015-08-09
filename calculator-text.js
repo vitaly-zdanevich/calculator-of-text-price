@@ -19,7 +19,7 @@ function calc() {
 	for (var i = 0; i < string.length; i++) {
 		var char = string.charAt(i);
 		if (char == ' ') {
-			break;
+			continue;
 		} else if (isNaN(char)) {
 			if (char == 'а' ||
 				char == 'б' ||
