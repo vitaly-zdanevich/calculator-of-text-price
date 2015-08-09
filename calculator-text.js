@@ -148,12 +148,12 @@ function calc() {
 			} else if (char == 'й' || char == 'ё') {
 				countSmall++;
 				sumSmall += priceSmall;
-				countCommas++;
+				countCommas += 2;
 				sumComma += priceComma;
 			} else if (char == 'Й' || char == 'Ё') {
 				countBig++;
 				sumBig += priceBig;
-				countCommas++;
+				countCommas += 2;
 				sumComma += priceComma;
 			}
 		} else { // number
