@@ -147,15 +147,25 @@ function calc() {
 				char == '.') {
 				countCommas++;
 				sumComma += priceComma;
-			} else if (char == 'й' || char == 'ё') {
+			} else if (char == 'ё') {
 				countSmall++;
 				sumSmall += priceSmall;
 				countCommas += 2;
-				sumComma += priceComma;
-			} else if (char == 'Й' || char == 'Ё') {
+				sumComma += priceComma * 2;
+			} else if (char == 'Ё') {
 				countBig++;
 				sumBig += priceBig;
 				countCommas += 2;
+				sumComma += priceComma * 2;
+			} else if (char == 'й') {
+				countSmall++;
+				sumSmall += priceSmall;
+				countCommas++;
+				sumComma += priceComma;
+			} else if (char == 'Й') {
+				countBig++;
+				sumBig += priceBig;
+				countCommas++;
 				sumComma += priceComma;
 			}
 		} else { // number
