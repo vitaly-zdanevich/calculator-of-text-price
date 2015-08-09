@@ -8,12 +8,12 @@ function calc() {
 
 	var sumBig   = 0;
 	var sumSmall = 0;
-	var sumNuber = 0;
+	var sumNumber = 0;
 	var sumComma = 0;
 
 	var countBig    = 0;
 	var countSmall  = 0;
-	var countNuber  = 0;
+	var countNumber  = 0;
 	var countCommas = 0;
 
 	for (var i = 0; i < string.length; i++) {
@@ -159,18 +159,18 @@ function calc() {
 				sumComma += priceComma;
 			}
 		} else { // number
-			countNuber++;
-			sumNuber += priceNumbers;
+			countNumber++;
+			sumNumber += priceNumbers;
 		}
 
 	} // for
 
 	document.getElementById('countBig').innerHTML = countBig;
 	document.getElementById('countSmall').innerHTML = countSmall;
-	document.getElementById('countNumber').innerHTML = countNuber;
+	document.getElementById('countNumber').innerHTML = countNumber;
 	document.getElementById('countComma').innerHTML = countCommas;
 
-	var sumFinal = sumBig + sumSmall + sumNuber + sumComma;
+	var sumFinal = sumBig + sumSmall + sumNumber + sumComma;
 	document.getElementById('sum').innerHTML = (Math.round(sumFinal * 100)/100).toFixed(2) + ' $';
 
 }
