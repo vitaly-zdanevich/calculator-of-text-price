@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+	<head>
+		<meta charset="utf-8">
+		<script src="calculator-text.js"></script>
+	</head>
+
+	<div>
+		<table>
+			<tr>
+				<td>Цена большой буквы:</td><td><input id="priceBig"      type="number" step="0.01" max="10" min="1" value="5.22" onkeyup="calc()" onclick="calc()"> $</td>
+			</tr>
+			<tr>
+				<td>Цена маленькой буквы:</td><td><input id="priceSmall"  type="number" step="0.01" max="10" min="1" value="2.71" onkeyup="calc()" onclick="calc()"> $</td>
+			</tr>
+			<tr>
+				<td>Цена цифры:</td><td><input id="priceNumber"           type="number" step="0.01" max="10" min="1" value="2.71" onkeyup="calc()" onclick="calc()"> $</td>
+			</tr>
+			<tr>
+				<td>Цена знака препинания:</td><td><input id="priceComma" type="number" step="0.01" max="10" min="1" value="2.07" onkeyup="calc()" onclick="calc()"> $</td>
+			</tr>
+		</table>
+	</div><br>
+	<div>
+		Ваш текст:
+		<div><textarea id="string-for-calculation" onkeyup="calc()"></textarea></div>
+	</div><br>
+	<table>
+		<tr>
+			<td>Букв больших</td><td id="countBig"></td>
+		</tr>
+		<tr>
+			<td>Букв маленьких</td><td id="countSmall"><td>
+		</tr>
+		<tr>
+			<td>Цифр</td><td id="countNumber"></td>
+		</tr>
+		<tr>
+			<td>Знаков препинания</td><td id="countComma"></td>
+		</tr>
+	</table><br>
+Итого: <span id="sum"></span>
+
+</html>
