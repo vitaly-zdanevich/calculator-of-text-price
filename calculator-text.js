@@ -18,8 +18,9 @@ function calc() {
 
 	for (var i = 0; i < string.length; i++) {
 		var char = string.charAt(i);
-
-		if (isNaN(char)) {
+		if (char == ' ') {
+			break;
+		} else if (isNaN(char)) {
 			if (char == 'а' ||
 				char == 'б' ||
 				char == 'в' ||
