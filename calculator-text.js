@@ -168,6 +168,6 @@ function calc() {
 	document.getElementById('countComma').innerHTML = countCommas;
 
 	var sumFinal = sumBig + sumSmall + sumNuber + sumComma;
-	document.getElementById('sum').innerHTML = sumFinal + ' $';
+	document.getElementById('sum').innerHTML = Math.round(sumFinal).toFixed(2) + ' $';
 
 }
