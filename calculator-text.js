@@ -142,6 +142,7 @@ function calc() {
 				char == '-' ||
 				char == ':' ||
 				char == ',' ||
+				char == '`' ||
 				char == '.') {
 				countCommas++;
 				sumComma += priceComma;
