@@ -18,7 +18,7 @@ function calc() {
 
 	for (var i = 0; i < string.length; i++) {
 		var char = string.charAt(i);
-		if (char == ' ') {
+		if (char == ' ' || char == '\n') {
 			continue;
 		} else if (isNaN(char)) {
 			if (char == 'а' ||
