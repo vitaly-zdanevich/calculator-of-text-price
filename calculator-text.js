@@ -133,9 +133,7 @@ function calc() {
 				char == 'W' ||
 				char == 'X' ||
 				char == 'Y' ||
-				char == 'Z')
-			{
-
+				char == 'Z') {
 				countBig++;
 				sumBig += priceBig;
 			} else if (
@@ -168,7 +166,16 @@ function calc() {
 				countCommas++;
 				sumComma += priceComma;
 			}
-		} else { // number
+		} else if (char == '0' || // number. I can't just set 'else' here in opposite to 'if NaN()'
+				   char == '1' || // because we have some situations for some special characters
+				   char == '2' || // when it NaN but not correct number too, for example ascii-code 160
+				   char == '3' || // that looks like space but not space
+				   char == '4' ||
+				   char == '5' ||
+				   char == '6' ||
+				   char == '7' ||
+				   char == '8' ||
+				   char == '9') { 
 			countNumber++;
 			sumNumber += priceNumbers;
 		}
