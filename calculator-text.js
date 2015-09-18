@@ -168,7 +168,7 @@ function calc() {
 			}
 		} else if (char == '0' || // number. I can't just set 'else' here in opposite to 'if NaN()'
 				   char == '1' || // because we have some situations for some special characters
-				   char == '2' || // when it NaN but not correct number too, for example ascii-code 160
+				   char == '2' || // when it NaN and not any correct symbol too, for example ascii-code 160
 				   char == '3' || // that looks like space but not space
 				   char == '4' ||
 				   char == '5' ||
