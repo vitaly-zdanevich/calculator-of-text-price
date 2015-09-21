@@ -39,6 +39,7 @@ function calc() {
 				char == 'р' ||
 				char == 'с' ||
 				char == 'т' ||
+				char == 'у' ||
 				char == 'ф' ||
 				char == 'х' ||
 				char == 'ц' ||
@@ -97,6 +98,7 @@ function calc() {
 				char == 'Р' ||
 				char == 'С' ||
 				char == 'Т' ||
+				char == 'У' ||
 				char == 'Ф' ||
 				char == 'Х' ||
 				char == 'Ц' ||
